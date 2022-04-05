@@ -1,0 +1,225 @@
+@import url("../css/reset.css");
+@font-face {
+    font-family: "Quentin";
+    src: url("../asset/Quentin.otf");
+}
+@font-face {
+    font-family: "notoSans_r";
+    src: url("../asset/NotoSans-Regular.ttf");
+}
+@font-face {
+    font-family: "notoSans_b";
+    src: url("../asset/NotoSans-Bold.ttf");
+}
+@font-face {
+    font-family: "notoSans_KR_r";
+    src: url("../asset/NotoSansKR-Regular.otf");
+}
+@font-face {
+    font-family: "notoSans_KR_l";
+    src: url("../assets/NotoSansKR-Light.otf");
+}
+
+/* common */
+:root {
+    --main-color: #273141;
+    --point-color: #E75447;
+    --text-color: #5E5E5E;
+    --bg-color: #C4C4C4;
+    font-size: 10px;
+}
+html,
+body {
+    font: 10px "notoSans_KR_r";
+    overflow-x: hidden;
+    word-break: keep-all;
+}
+.container {
+    max-width: 80vw;
+    width: 100%;
+    margin: 0 auto;
+}
+/* header */
+
+
+/* main */
+.main {
+    padding: 8rem 0 0 3rem;
+    justify-content:center;
+}
+.main .side_left {
+    display: none;
+}
+.main .side_right {
+    flex: none;
+    width: 100%;
+    padding-left: 0;
+    flex-direction: column-reverse;
+}
+.main .side_right .side_bgWrap {
+    width: 100%;
+    height: 70%;
+    justify-content: flex-end;
+
+}
+.main .side_right .side_bgWrap .side_bg {
+    width: 65%;
+}
+.main .side_right .side_txts {
+    align-self: flex-start;
+}
+.side_title {
+    font-size: 20.5vw;
+}
+.main .side_right .side_bgWrap .side_title_hs {
+    right: 4vw;
+}
+.main .side_right .side_bgWrap .side_title_hs:nth-child(2) {
+    right: -8.5vw;
+    top: 60%;
+}
+.main .side_right .side_bgWrap .side_title_design {
+    top: 60%;
+    right: 23vw;
+}
+.main .side_right .side_txts {
+    font-size: 5vw;
+}
+.main .side_right .side_txts .side_txt {
+    letter-spacing: normal;
+}
+
+/* section1 */
+section {
+    padding: 4rem 0 0;
+}
+.sec1 .title_left_txt {
+    font-size: 1rem;
+}
+.title::before {
+    font-size: 2.7rem;
+}
+.sec1 .contentWrap {
+    gap: unset;
+}
+.sec1 .contentWrap .contentBox .content_left .content_num {
+    top: -5rem;
+    font-size: 7rem;
+    margin-left: 1.5rem;
+}
+.sec1 .contentWrap .contentBox {
+    flex-direction: column;
+    gap: 2rem;
+    height: 50rem;
+}
+.sec1 .contentWrap .contentBox .content_right .content_title {
+    font-size: 3rem;
+}
+.sec1 .contentWrap .contentBox .content_right .content_title::after {
+    width: 0.5rem;
+    height: 0.5rem;
+    right: -1rem;
+    bottom: 1rem;
+}
+.sec1 .contentWrap .contentBox .content_right .content_content {
+    font-size: 1.5rem;
+}
+.sec1 .contentWrap .contentBox .content_right .content_rightInner {
+    bottom: unset;
+}
+/* section2 */
+.sec2 {
+    padding: 0!important;
+    height: 15rem;
+}
+.sec2 .we_slogan::before {
+    width: 140rem;
+    height: 6rem;
+}
+/* section3 */
+.sec3 .secInner .sec_contentWrap .sec_contentBox {
+    gap: 0;
+}
+.sec3 .secInner .sec_contentWrap .sec_contentBox .sec_content_top .sec_content_num {
+    font-size: 3rem;
+    margin-right: 3rem;
+}
+.sec3 .secInner .sec_contentWrap .sec_contentBox .sec_content_top .sec_content_num::before {
+    bottom: 0.9rem;
+    right: -1rem;
+    width: 0.7rem;
+    height: 0.7rem;
+}
+.sec3 .secInner .sec_contentWrap .sec_contentBox .sec_content_top .sec_content_num::after {
+    display: none;
+}
+.sec3 .secInner .sec_contentWrap .sec_contentBox .sec_content_bottom .sec_content_cont {
+    padding-left: 0;
+    font-size: 1.1rem;
+}
+.sec3 .secInner .sec_contentWrap .sec_contentBox .sec_content_top .sec_content_title {
+    font-size: 3rem;
+}
+/* section4 */
+.sec4 .secInner .sec_contentWrap > div {
+    height: 50rem;
+}
+.sec4 .secInner .sec_contentWrap .serviceBox_content {
+    margin-top: 4rem;
+}
+.sec4 .secInner .sec_contentWrap .webBox .serviceBox_content {
+    margin-left: 3rem;
+}
+.sec4 .secInner .sec_contentWrap .webBox .serviceBox_content {
+    margin-right: 3rem;
+}
+.sec4 .secInner .sec_contentWrap .graphicBox .serviceBox_content {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.sec4 .secInner .sec_contentWrap .serviceBox_content .service_title {
+    font-size: 12vw;
+    margin-bottom: 6rem;
+}
+.sec4 .secInner .sec_contentWrap .serviceBox_content .service_title .service_titleKr {
+    font-size: 4vw;
+}
+.sec4 .secInner .sec_contentWrap .serviceBox_content .sec_content_num {
+    font-size: 3rem;
+}
+.sec4 .secInner .sec_contentWrap .serviceBox_content .sec_content_num::before {
+    width: .7rem;
+    height: .7rem;
+    right: -1rem;
+    bottom: 0.7rem;
+}
+.sec4 .secInner .sec_contentWrap .serviceBox_content .service_lists {
+    font-size: 1.6rem;
+    margin-top: 6rem;
+}
+/* section5 */
+.sec5 .secInner .sec_content_left .touch_bg {
+    width: 72.5%;
+    height: 17rem;
+}
+.sec5 .secInner .sec_content_left .touch_title {
+    font-size: 5rem;
+    margin-top: -4rem;
+    left: 22vw;
+}
+.sec5 .secInner .sec_content_left .touch_title:nth-of-type(2) {
+    top: 6rem;
+}
+.sec5 .secInner .sec_content_right {
+    padding-top: 4rem;
+}
+.sec5 .secInner .sec_content_right .touch_txt {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.sec5 .goBtnWrap {
+    width: 16rem;
+}
+.sec5 .goBtnWrap .goBtn {
+    font-size: 2.5rem;
+}
